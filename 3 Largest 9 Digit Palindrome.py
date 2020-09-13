@@ -3,7 +3,7 @@ import numpy as np
 
 def is_prime(n):
     sqt = int(np.sqrt(n))
-    for j in range(2, sqt):
+    for j in range(2, sqt+1):
         if n % j == 0:
             return False
     return True
